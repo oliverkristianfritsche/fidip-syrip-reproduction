@@ -1,0 +1,101 @@
+test,verdict,leaked_into,evidence
+test20.jpg,copy,train,train00073.jpg
+test42.jpg,copy,train,train00315.jpg
+test46.jpg,copy,train,train00272.jpg
+test50.jpg,copy,train,train00340.jpg
+test7.jpg,same_video,train,train00047.jpg; unlisted byte copy train00231.jpg
+test78.jpg,same_video,train,train00065.jpg
+test40.jpg,same_video,train,train00043.jpg
+test76.jpg,same_video,train,train00126.jpg
+test70.jpg,same_video,train,train00112.jpg
+test2.jpg,same_video,train,train00011.jpg
+test16.jpg,same_video,train,train00126.jpg
+test5.jpg,same_video,train,train00300.jpg
+test64.jpg,same_video,train,train00009.jpg
+test38.jpg,same_video,train,train00330.jpg
+test57.jpg,same_video,train,train00410.jpg
+test74.jpg,same_video,train,train00002.jpg
+test60.jpg,same_video,train,train00085.jpg
+test73.jpg,same_video,train,train00010.jpg
+test71.jpg,same_video,train,train00111.jpg
+test66.jpg,same_video,train,train00126.jpg
+test67.jpg,same_video,train,train00460.jpg
+test90.jpg,same_video,train,train00340.jpg
+test95.jpg,same_video,train,train00330.jpg
+test21.jpg,same_video,train,train00001.jpg
+test94.jpg,same_video,train,train00111.jpg
+test55.jpg,same_video,train,train00141.jpg
+test84.jpg,same_video,train,train00445.jpg
+test79.jpg,same_video,train,train00118.jpg
+test0.jpg,same_video,train,train00343.jpg
+test56.jpg,same_video,train,train00422.jpg; unlisted byte copy train00222.jpg
+test58.jpg,same_video,train,train00482.jpg
+test19.jpg,same_video,train,train00117.jpg
+test12.jpg,same_infant,train,train00102.jpg
+test77.jpg,same_infant,train,train00089.jpg
+test41.jpg,same_infant,train,train00297.jpg
+test53.jpg,same_infant,train and select,train00463.jpg; select test337.jpg
+test47.jpg,same_video,train and select,train00137.jpg; select test207.jpg
+test88.jpg,same_video,train and select,train00308.jpg; select test302.jpg
+test51.jpg,same_video,train and select,train00464.jpg; select test239.jpg
+test81.jpg,same_video,train and select,train00023.jpg; select test180.jpg
+test93.jpg,same_video,train and select,train00418.jpg (same room); select test462.jpg
+test68.jpg,same_video,train and select,train00464.jpg; select test281.jpg
+test29.jpg,same_video,train and select,train00075.jpg; select test186.jpg
+test33.jpg,same_video,train and select,train00415.jpg; select test207.jpg
+test30.jpg,same_video,train and select,train00343.jpg; select test215.jpg
+test49.jpg,same_video,train and select,train00057.jpg; select test332.jpg
+test35.jpg,same_video,train and select,train00023.jpg; select test269.jpg
+test27.jpg,same_video,train and select,train00286.jpg; select test288.jpg
+test91.jpg,same_video,train and select,train00090.jpg; select test226.jpg
+test59.jpg,same_video,train and select,train00115.jpg; select test223.jpg
+test80.jpg,same_video,train and select,train00134.jpg; select test298.jpg
+test98.jpg,same_video,train and select,train00418.jpg (same room); select test118.jpg
+test62.jpg,same_video,train and select,train00113.jpg (same chaptered video); select test417.jpg
+test3.jpg,same_video,train and select,train00265.jpg; select test432.jpg
+test72.jpg,same_video,train and select,train00230.jpg; select test333.jpg
+test89.jpg,same_infant,train and select,train00034.jpg; select test172.jpg
+test26.jpg,same_video,select,select test284.jpg; train00139.jpg same Pathways set only
+test13.jpg,same_video,select,select test260.jpg
+test31.jpg,same_video,select,select test319.jpg
+test32.jpg,same_video,select,select test366.jpg
+test82.jpg,same_video,select,select test356.jpg
+test87.jpg,same_video,select,select test460.jpg
+test9.jpg,same_video,select,select test107.jpg
+test96.jpg,same_video,select,select test396.jpg
+test24.jpg,same_infant,select,select test350.jpg
+test15.jpg,same_infant,select,select test350.jpg
+test11.jpg,same_infant,select,select test172.jpg
+test10.jpg,same_set,none,train00017.jpg stock studio
+test22.jpg,same_set,none,select test492.jpg
+test1.jpg,same_set,none,train00085.jpg Pathways set; another infant
+test6.jpg,same_set,none,select test264.jpg play gym
+test44.jpg,same_set,none,select test448.jpg
+test97.jpg,different,none,
+test37.jpg,different,none,
+test99.jpg,different,none,
+test54.jpg,different,none,
+test28.jpg,different,none,
+test14.jpg,different,none,
+test63.jpg,different,none,
+test61.jpg,different,none,
+test39.jpg,different,none,
+test36.jpg,different,none,
+test4.jpg,different,none,
+test69.jpg,different,none,
+test83.jpg,different,none,
+test52.jpg,different,none,
+test45.jpg,different,none,
+test43.jpg,different,none,
+test23.jpg,different,none,
+test8.jpg,different,none,
+test75.jpg,different,none,
+test65.jpg,different,none,
+test17.jpg,different,none,
+test25.jpg,different,none,
+test85.jpg,different,none,
+test34.jpg,different,none,
+test92.jpg,different,none,
+test86.jpg,different,none,
+test18.jpg,different,none,
+test48.jpg,different,none,

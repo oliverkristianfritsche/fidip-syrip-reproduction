@@ -1,0 +1,53 @@
+# Paths and pinned facts for smalldata-project. Scripts read this file through src/smalldata/paths.py.
+# Each host has one root. Every path under data: and weights: is relative to that root.
+
+upstream:
+  repo: https://github.com/ostadabbas/Infant-Pose-Estimation.git
+  commit: a76b4f418107b8d3548d9779e94702e2508fbef1
+  # local_path is relative to this repository. cluster_path is relative to the cluster root.
+  local_path: third_party/Infant-Pose-Estimation
+  cluster_path: upstream/Infant-Pose-Estimation
+
+roots:
+  # The cluster project folder. SKILL.md describes its layout.
+  cluster: /scratch/fritsche.o/smalldata-project
+  # Local data and weights live beside the repository, never inside it.
+  local: ../_data/smalldata-project
+
+# The root is also DATA_DIR for the upstream tools, so the upstream relative paths
+# (data/syrip/, models/...) resolve under it. Weights sit under data/ here so one root covers both.
+data:
+  syrip: data/syrip
+  annotations:
+    train_pre_infant: data/syrip/annotations/person_keypoints_train_pre_infant.json
+    train_infant: data/syrip/annotations/person_keypoints_train_infant.json
+    validate_infant: data/syrip/annotations/person_keypoints_validate_infant.json
+  images:
+    train_pre_infant: data/syrip/images/train_pre_infant
+    train_infant: data/syrip/images/train_infant
+    validate_infant: data/syrip/images/validate_infant
+  # The original SyRIP release (SyRIP.zip). Test100 is a subset of Test500 by file name and by bytes.
+  original:
+    validate500_annotations: data/syrip_original/annotations/validate500/person_keypoints_validate_infant.json
+    validate_images: data/syrip_original/images/validate_infant
+
+# The Drive file for coco_w48_384x288 is spelled w48_384×288.pth with a Unicode multiplication sign.
+# The local and cluster copies use the ASCII name below.
+weights:
+  hrnet_fidip: data/models/hrnet_fidip.pth
+  mobile_fidip: data/models/mobile_fidip.pth
+  coco_w48_384x288: data/models/coco/w48_384x288.pth
+  coco_posemobile: data/models/coco/posemobile.pth
+
+# Expected sample counts, read on 2026-11-02 from the annotation files in syrip_for_train.zip
+# (md5 06c2d03e09c5561c4f598227c61c4fcc). AGENT.md records the check.
+counts:
+  train_pre_infant: 4057   # adult images with real or synthetic labels. The upstream README says 1904 + 2000 = 3904; the file holds 4057
+  train_infant: 1200       # 200 real + 1000 synthetic, the FG 2021 training set. The image folder holds 1500 files
+  validate_infant: 100     # SyRIP Test100
+
+# Thresholds for the part checks. The metric is COCO OKS AP on validate_infant with GT boxes.
+thresholds:
+  baseline_ap_published: 93.6   # DarkPose + FiDIP, HRNet-W48 384x288, upstream README table 2
+  baseline_ap_min: 93.0         # Part 5 passes at or above this value
+  reproduce_ap_tolerance: 1.0   # Part 4 passes within this many AP points of the published value

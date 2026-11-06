@@ -1,0 +1,33 @@
+{
+  "time": "2026-11-05T00:10:53",
+  "node": "d4055",
+  "python": "3.12.16",
+  "torch": "2.3.1+cu121",
+  "torchvision": "0.18.1+cu121",
+  "cuda_build": "12.1",
+  "cuda_available": true,
+  "gpu": "NVIDIA H200",
+  "gpu_mem_gb": 139.8,
+  "host_kind": "cluster",
+  "root": "/scratch/fritsche.o/smalldata-project",
+  "upstream": "/scratch/fritsche.o/smalldata-project/upstream/Infant-Pose-Estimation",
+  "upstream_commit": "a76b4f418107b8d3548d9779e94702e2508fbef1",
+  "imports": "ok",
+  "pose_params_m": 63.6,
+  "domain_params_m": 0.75,
+  "forward_shapes": [
+    [
+      1,
+      48,
+      96,
+      72
+    ],
+    [
+      1,
+      17,
+      96,
+      72
+    ]
+  ],
+  "missing_paths": []
+}

@@ -1,0 +1,20 @@
+# Data, weights, and the upstream code stay outside the repository.
+data/
+third_party/
+*.pt
+*.pth
+*.ckpt
+*.zip
+*.tgz
+
+# Secrets
+.env
+*.pem
+
+# Logs, caches, and LaTeX build files
+logs/
+/*.out
+__pycache__/
+*.pyc
+report/*.aux
+report/*.log

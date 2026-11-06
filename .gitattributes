@@ -1,0 +1,5 @@
+# Cluster bash fails on CRLF. Keep LF in scripts on every platform.
+*.sh     text eol=lf
+*.sbatch text eol=lf
+*.py     text eol=lf
+*.yaml   text eol=lf

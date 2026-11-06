@@ -1,0 +1,29 @@
+# Python dependencies for smalldata-project.
+#
+# Install torch and torchvision first with the CUDA build that matches your
+# driver (see the Installation section of the README), then:
+#
+#   pip install -r requirements.txt
+#
+# The upstream pins come from third_party/Infant-Pose-Estimation/fidip_env.yml:
+# Python 3.12, torch 2.3.1, CUDA 12.1.
+
+# Upstream FiDIP lib/ and tools/. Every training and evaluation script needs this group.
+# numpy stays below 2: the torch 2.3.1 wheels and the prebuilt nms extensions target numpy 1.x.
+numpy==1.26.4
+# The headless wheel has no GUI dependency, so it imports on a compute node without libGL.
+opencv-python-headless
+pycocotools
+yacs
+json-tricks
+pyyaml
+tensorboard
+tensorboardX
+# lib/models imports the MobileNet variant on load, and that module needs dsntnn.
+dsntnn
+
+# Optional: rebuild lib/nms with `make` when the prebuilt extensions do not load.
+cython
+
+# Project scripts: scripts/*.py and src/smalldata read configs/paths.yaml (pyyaml above) and plot curves.
+matplotlib

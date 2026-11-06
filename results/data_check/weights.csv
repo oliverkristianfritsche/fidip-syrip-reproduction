@@ -1,0 +1,5 @@
+key,path,bytes,md5,status
+hrnet_fidip,<root>/data/models/hrnet_fidip.pth,255354649,c1b4994799f08e6cbc44942f44472790,ok
+mobile_fidip,<root>/data/models/mobile_fidip.pth,16671259,049dbf22c3131bb72872bc744a1eefe5,ok
+coco_w48_384x288,<root>/data/models/coco/w48_384x288.pth,255040847,403962abcb38f9a85891c1a7a029dcdc,ok
+coco_posemobile,<root>/data/models/coco/posemobile.pth,16671259,f3a3f265d26dd8fdc1d57897809e7ed8,ok

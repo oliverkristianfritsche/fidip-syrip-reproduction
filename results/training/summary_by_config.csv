@@ -1,0 +1,11 @@
+config,n,final_AP_mean,final_AP_sd,final_AP_min,final_AP_max
+hrnet_w48_384x288_infant_baseline,3,91.5,0.57,90.84,91.87
+hrnet_w48_384x288_infant_fidip,3,90.43,1.25,89.01,91.33
+hrnet_w48_384x288_infant_fidip_clean,3,91.6,0.41,91.17,91.98
+hrnet_w48_384x288_infant_fidip_lr1e-4,3,91.74,0.25,91.55,92.02
+hrnet_w48_384x288_infant_fidip_lr1e-4_heldout,3,91.63,0.15,91.52,91.8
+hrnet_w48_384x288_infant_fidip_lr1e-4_heldout_freeze0,3,91.88,0.64,91.14,92.26
+hrnet_w48_384x288_infant_fidip_lr1e-4_heldout_freeze484,3,90.92,0.64,90.22,91.48
+hrnet_w48_384x288_infant_fidip_lr1e-4_lambda5e-2_heldout,3,0.48,0.5,0.01,1.01
+hrnet_w48_384x288_infant_fidip_lr1e-4_lambda5e-3_heldout,3,58.55,5.51,52.86,63.86
+hrnet_w48_384x288_infant_fidip_paper,3,91.81,0.53,91.21,92.21
